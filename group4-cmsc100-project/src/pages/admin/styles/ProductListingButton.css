@@ -1,0 +1,74 @@
+.product-sorting-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sort-by-name {
+    border-radius: 15px;
+    width: 120px;
+    height: 50px;
+    font-family: Poppins;
+    border: 2px solid #FF6E00;
+    background: #fff;
+    color: #FF6E00;
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+.sort-by-name:hover {
+    background: #FF6E00;
+    color: #fff;
+}
+
+.sort-by-price {
+    border-radius: 15px;
+    width: 120px;
+    height: 50px;
+    font-family: Poppins;
+    border: 2px solid #FF6E00;
+    background: #fff;
+    color: #FF6E00;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.sort-by-price:hover {
+    background: #FF6E00;
+    color: #fff;
+}
+
+.sort-by-qty {
+    border-radius: 15px;
+    width: 140px;
+    height: 50px;
+    font-family: Poppins;
+    border: 2px solid #FF6E00;
+    background: #fff;
+    color: #FF6E00;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.sort-by-qty:hover {
+    background: #FF6E00;
+    color: #fff;
+}
+
+.sort-by-type {
+    border-radius: 15px;
+    width: 140px;
+    height: 50px;
+    font-family: Poppins;
+    border: 2px solid #FF6E00;
+    background: #fff;
+    color: #FF6E00;
+    font-size: 20px;
+    margin-right: 8px;
+    padding: 5px;
+}
+
+.sort-by-type:hover {
+    background: #FF6E00;
+    color: #fff;
+}

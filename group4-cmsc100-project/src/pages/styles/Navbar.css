@@ -1,0 +1,117 @@
+nav {
+  background-color: var(--Color-4, #F4ECE5);
+  stroke-width: 2px;
+  stroke: var(--200, #f6faff);
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.10)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.08));
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 1px 10px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 60px; 
+  margin-bottom: 5%;
+  transition: width 0.3s ease-in-out; 
+}
+
+.navbar-logo {
+  width: 160px;
+  height: 50px;
+  margin-bottom: -7px;
+}
+
+.shopping-bag {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 0.3s ease; 
+}
+
+.shopping-bag:hover {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(93%) saturate(604%) hue-rotate(-6deg);
+}
+
+.shopping-cart {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 0.3s ease; 
+}
+
+.shopping-cart:hover {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(93%) saturate(604%) hue-rotate(-6deg);
+}
+  
+.user-photo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: #bc6c25;
+  border-radius: 100%; 
+  margin-right: 20px;  
+  transition: transform 0.3s ease; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.user-photo:hover {
+  transform: scale(0.9); 
+}
+
+/* Admin side */
+
+.admin-navbar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.admin-components {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.209px;
+  list-style-type: none;
+  margin-right: 60px;
+  padding-left: 10px;
+
+}
+
+.admin-link {
+  text-decoration: none;
+  color: #FF6E00;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s ease-in-out; 
+}
+
+.admin-link:hover {
+  color: #FFA500; 
+}
+
+.admin-link.active {
+  border-bottom: 4px solid #FF6E00;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.scrolled {
+  width: 100%; 
+}

@@ -1,0 +1,43 @@
+.admin-homepage-background {
+    background-color: white;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-homepage-logo {
+    animation: float 3s ease-in-out infinite;
+}
+
+.admin-welcome-name {
+    display: flex;
+    width: 747px;
+    height: 101px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--Color-11, #FF6E00);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.white-icon {
+    filter: invert(1);
+}
+
+/* Animations */
+
+@keyframes float {
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(-20px); }
+    100% { transform: translatey(0px); }
+}

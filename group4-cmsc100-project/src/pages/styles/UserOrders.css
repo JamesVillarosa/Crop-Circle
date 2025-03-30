@@ -1,0 +1,13 @@
+.orderspage-title {
+    font-size: 50px;
+    color: #FF6E00;
+    text-align: center;
+  }
+
+  .orders-image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  

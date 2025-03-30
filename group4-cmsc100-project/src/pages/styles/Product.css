@@ -1,0 +1,188 @@
+html {
+  height: 100%;
+  --highlight: var(--primary);
+  --background-color: #f0f8ff;
+  --light-border: #eaeaea;
+  --shadow-1: rgba(227, 9, 9, 0.05);
+}
+
+body {
+  flex-direction: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px; 
+}
+
+.navItem {
+  margin-left: 20px; 
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem; 
+}
+
+.martspage-title{
+  color: #FF6E00;
+}
+
+.marts-image{
+  width: 30%;
+}
+
+
+.productListContainer {
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: var(--background-color);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1px;
+
+}
+
+.productListTitle {
+  color: var(--primary);
+  font-size: 1.25rem; 
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light-border); 
+}
+
+.product-list {
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.products {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.product {
+  display: grid;
+  width: 280px;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 25px;
+  background-color: #F4ECE5;
+  font-size: 14px;
+  color: black;
+}
+
+.products {
+  padding-top: 30px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.productimage {
+  width: 100%;
+  height: 200px; 
+  border-radius: 15px;
+}
+
+.product-details {
+  text-align: justify;
+  margin-top: 20px;
+  
+}
+
+.span-name-price {
+  display: flex;
+}
+
+.span {
+  display: flex;
+  margin-top: -20px; 
+}
+
+.desc-container {
+  margin-top: -15px;
+  height: 120px;
+}
+
+.productname {
+  margin: 0;
+}
+
+.productprice {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.foodtype {
+  border: 1px solid #FF6E00;
+  color: #FF6E00;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.productqty {
+  border: 1px solid #FF6E00;
+  color: #FF6E00;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 4px;
+  padding: 5px;
+}
+
+.addcart-plus {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.addcart-plus button {
+  background-color: #FF6E00;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  height: 45px; 
+}
+
+.addcart-plus .qtybutton {
+  width: 50px;
+  text-align: center;
+}
+
+.addcart-plus button:hover {
+  background-color: #e65a00;
+}
+
+.addToCart {
+  margin-left: 8px;
+}

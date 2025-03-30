@@ -1,0 +1,172 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/illus/bg-welcomepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.signupwrapper{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .1);
+  color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  width: 590px;
+  height: 530px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header .text{
+  color: #F98638;
+  font-size: 30px;
+  /* font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(105, 81, 19, 0.308); */
+  font-family: 'Poppins-Black';
+  src: url('src/assets/font/Poppins/Poppins-Black.ttf') format('ttf');
+  margin-top: -15px;
+}
+
+.header .sub-text{
+  color: #666538;
+  font-size: 20px;
+  font-family: 'Poppins-SemiBold';
+  src: url('src/assets/font/Poppins/Poppins-SemiBold.ttf') format('ttf');
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.header .icon{
+  color: #666538;
+  font-size: 38px;
+}
+
+.inputs{
+  margin-top: 10px;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px 8px ;
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  width: 90%;
+  height: 50px;
+  background-color: #eaeaea;
+  border-radius: 15px;
+  padding-left: 20px;
+  position: relative;
+  border-color: #666538;
+}
+
+.input .text{
+  font-family: Poppins;
+  font-size: 13px;
+  color: #666538;
+}
+.input .icon{
+  color: #666538;
+}
+
+.input ::placeholder{
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.input input{
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.error{
+  color: #fefae0;
+  font-size: 12px;
+  position: absolute;
+  bottom: 112px;
+  padding: 20px;
+}
+
+/* Parent container styling */
+.container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 10vh; /* Full viewport height, you can adjust as needed */
+}
+
+/* Button styling */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 250px;
+  color: #fff;
+  margin-top: 15px;
+  background-color: #666538;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+.login:hover{
+  background: #fefae0;
+  color: #BAB653;
+}
+
+
+.submit{
+  display: flex;
+  justify-content: center;
+  color: #666538;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 10px;
+}
+
+.submit a{
+  color: #666538;
+}
+
+.submit a:hover{
+  color: #BAB653;
+  text-decoration: underline;
+}

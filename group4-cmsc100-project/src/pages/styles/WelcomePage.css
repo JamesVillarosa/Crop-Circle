@@ -1,0 +1,157 @@
+.welcome-page-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/illus/bg-welcomepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-page {
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 2px solid var(--200, #378DF3);
+    background: #FFF;    
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 3px 10px 0px rgba(0, 0, 0, 0.10); 
+    display: center;
+    margin: auto;
+}
+
+.welcome-text {
+    color: #F98638;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: -20px;
+    
+}
+
+.welcomepage-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    height: 50%;
+}
+
+.login-btn {
+    display: flex;
+    width: 277.5px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.5px;
+    border-radius: 15px;
+    background: var(--Color-5, #666538);
+    color: var(--0, #FFF);
+    font-family: Poppins;
+    font-size: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.admin-btn {
+    display: flex;
+    width: 277.5px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.5px;
+    border-radius: 15px;
+    border: 2.5px solid var(--Color-7, #363619);
+    color: var(--Color-7, #363619);
+    font-family: Poppins;
+    font-size: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    display: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.signin-text {
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: var(--Color-7, #363619);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+login-btn, .admin-btn {
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.login-btn:hover, .admin-btn:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.login-btn:active, .admin-btn:active {
+    transform: scale(0.95);
+}
+
+.login-btn, .admin-btn {
+    animation: fadeIn 1s;
+}
+
+.welcome-footer {
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.upper-welcome {
+    margin-bottom: 0px;
+}
+
+.lower-welcome {
+    margin-bottom: 30px;
+}
+
+.white-icon {
+    filter: invert(1);
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,138 @@
+
+.order-product-list {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .order-products {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+  }
+  
+  .order-item {
+    display: grid;
+    width: 280px;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 25px;
+    background-color: #F4ECE5;
+    font-size: 14px;
+    color: black;
+  }
+
+  .order-transaction{
+    font-size: 8px;
+    color: rgba(128, 128, 128, 0.533);
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .order-products{
+    padding-top: 30px;
+  }
+  .order-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .order-product-image {
+    width: 100%; /* Adjust image width */
+    height: 200px;
+    border-radius: 15px;
+  }
+  
+  .order-desc {
+    text-align: justify;
+
+  }
+  
+  .span-order{
+    margin-top: -18px;
+  }
+
+  .order-desc-container{
+    margin-top: -15px;
+    height: 120px;
+  }
+
+
+  .order-productprice {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+  .order-foodtype{
+    border: 1px solid #FF6E00;
+    color: #FF6E00;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px; 
+    padding: 5px;
+  }
+
+  .order-productqty{
+    border: 1px solid #FF6E00;
+    color: #FF6E00;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 4px;
+    padding: 5px;
+  }
+
+  .order-status {
+    border: 1px solid #FF6E00;
+    color: #FF6E00;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 4px;
+    
+  }
+
+  .cancel-order {
+    background-color: #FF6E00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    height: 35px;
+  }
+
+  .order-status.completed {
+    background-color: #28a745; 
+    border-color: #28a745;/* Green */
+    color: white;
+}
+
+.order-status.canceled {
+    background-color: red;
+    color: white;
+}
+
+  .order-status:hover {
+    color: #E9CF81;
+    border: 1px solid #E9CF81; 
+  }
+  
+  .order-time {
+    color: #FF6E00;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  
+  .order-time:hover {
+    color: #E9CF81;
+  }
+  
