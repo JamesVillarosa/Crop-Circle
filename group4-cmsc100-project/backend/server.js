@@ -8,6 +8,7 @@ import User from './models/userModel.js';
 import Product from './models/productModel.js';
 import Cart from './models/cartModel.js';
 import Order from './models/orderModel.js';
+import 'dotenv/config';
 
 
 const SECRET_KEY = 'super-secret-key';
@@ -18,14 +19,37 @@ const app = express();
 // connect to mongoDB
 const dbURI = 'mongodb+srv://jvvillarosa:2SIItT2zSMwamnhL@projectdb.2ib30.mongodb.net/';
 
+// Landing route for /
+app.get('/', (req, res) => {
+  res.status(200).send('Welcome to the Crop Circle API!');
+});
+
+// Self-ping function to keep the server alive
+const keepServerAlive = () => {
+  const serverUrl = process.env.SERVER_URL || `http://localhost:${process.env.PORT}`;
+  setInterval(async () => {
+    try {
+      const response = await fetch(serverUrl);
+      if (response.ok) {
+        console.log('Server pinged to stay alive.');
+      } else {
+        console.error('Server ping failed with status:', response.status);
+      }
+    } catch (err) {
+      console.error('Error pinging the server:', err.message);
+    }
+  }, 5 * 60 * 1000); // Ping every 5 minutes
+};
+
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => {
-    app.listen(3001, () => {
-      console.log('Server connected to port 3001 and MongoDB');
+    app.listen(process.env.PORT, () => {
+      console.log(`Server connected to port ${process.env.PORT} and MongoDB`);
+      keepServerAlive();
     });
   })
   .catch((error) => {
