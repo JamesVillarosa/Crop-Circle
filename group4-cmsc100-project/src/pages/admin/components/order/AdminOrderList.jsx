@@ -30,7 +30,7 @@ const AdminOrderList = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/admin/orders');
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/admin/orders`);
       setOrders(response.data);
     } catch (error) {
       console.error('Error fetching orders:', error);
@@ -43,7 +43,7 @@ const AdminOrderList = () => {
 
   const completeOrder = async (orderId) => {
     try {
-      const response = await axios.patch(`http://localhost:3001/orders/${orderId}/complete`, {});
+      const response = await axios.patch(`${import.meta.env.VITE_API_URL}/orders/${orderId}/complete`, {});
 
       if (response.status === 200) {
         setModalContent({

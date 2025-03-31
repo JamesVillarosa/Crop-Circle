@@ -15,7 +15,7 @@ const AdminOrderPage = () => {
   // Function to fetch orders from the database
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/admin/orders", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/admin/orders`, {
       });
 
       setOrders(response.data);

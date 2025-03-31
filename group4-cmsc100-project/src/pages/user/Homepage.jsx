@@ -20,7 +20,7 @@ export default function Home() {
           throw new Error('No token found');
         }
 
-        const response = await axios.get("http://localhost:3001/user", {
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/user`, {
           headers: { 'Authorization': `Bearer ${token}` },
         });
 

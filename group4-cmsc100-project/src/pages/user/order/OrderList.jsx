@@ -35,7 +35,7 @@ const OrderList = () => {
   const fetchOrders = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:3001/orders', {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/orders`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -53,7 +53,7 @@ const OrderList = () => {
   const cancelOrder = async (orderId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.patch(`http://localhost:3001/orders/${orderId}/cancel`, {}, {
+      const response = await axios.patch(`${import.meta.env.VITE_API_URL}/orders/${orderId}/cancel`, {}, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

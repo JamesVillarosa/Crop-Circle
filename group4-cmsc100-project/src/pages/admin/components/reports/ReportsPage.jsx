@@ -24,7 +24,7 @@ function Reports() {
     const fetchMonthlyOrder = async () => {
       setLoading(true); 
       try {
-        const response = await axios.get(`http://localhost:3001/completedOrders/${selectedMonth}/${selectedYear}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/completedOrders/${selectedMonth}/${selectedYear}`);
         setOrders(aggregateOrders(response.data));
       } catch (error) {
         console.error("Error fetching completed orders:", error);
@@ -42,7 +42,7 @@ function Reports() {
     const fetchAnnualOrder = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:3001/completedOrders/year/${selectedYear}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/completedOrders/year/${selectedYear}`);
         setOrders(aggregateOrders(response.data));
       } catch (error) {
         console.error("Error fetching completed orders:", error);
@@ -60,7 +60,7 @@ function Reports() {
     const fetchWeeklyOrder = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:3001/completedOrders/week/${selectedWeek}/${selectedYear}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/completedOrders/week/${selectedWeek}/${selectedYear}`);
         setOrders(aggregateOrders(response.data));
       } catch (error) {
         console.error("Error fetching completed orders:", error);

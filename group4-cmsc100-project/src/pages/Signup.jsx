@@ -29,7 +29,7 @@ function Signup() {
   }, []);
 
   const fetchUsers = () => {
-    axios.get("http://localhost:3001/register").then((res) => {
+    axios.get(`${import.meta.env.VITE_API_URL}/register`).then((res) => {
       console.log(res.data);
     });
   };
@@ -89,7 +89,7 @@ function Signup() {
 
     if (Object.keys(errors).length === 0) {
       axios
-        .post("http://localhost:3001/register", {
+        .post(`${import.meta.env.VITE_API_URL}/register`, {
           fname: submittedFname,
           mname: submittedMname,
           lname: submittedLname,

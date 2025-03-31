@@ -12,7 +12,7 @@ function CartPage() {
   const fetchCartProducts = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get("http://localhost:3001/cart", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/cart`, {
         headers: {
           'Authorization': `Bearer ${token}`  
         }

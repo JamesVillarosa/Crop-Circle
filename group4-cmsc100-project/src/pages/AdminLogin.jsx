@@ -25,7 +25,7 @@ function AdminLogin() {
   }, []);
 
   const fetchUsers = () => {
-      axios.get('http://localhost:3001/register')
+      axios.get(`${import.meta.env.VITE_API_URL}/register`)
           .then((res) => {
               console.log(res.data);
           })
@@ -37,7 +37,7 @@ function AdminLogin() {
   const handleLogin = async (event) => {
       event.preventDefault();
       try {
-          const response = await axios.post('http://localhost:3001/admin/login', { email, password });
+          const response = await axios.post('${import.meta.env.VITE_API_URL}/admin/login', { email, password });
           const { token } = response.data;
           setModalContent({
             color: "#28a745",

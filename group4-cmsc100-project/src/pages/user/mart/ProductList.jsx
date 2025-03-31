@@ -99,7 +99,7 @@ const ProductList = ({ products, title }) => {
     }
   
     try {
-      const response = await axios.post("http://localhost:3001/cart", {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/cart`, {
         productId: product.productId,
         name: product.name,
         price: product.price,

@@ -71,7 +71,7 @@ const CartList = ({ cartProducts }) => {
   const removeFromCart = async (cartItemId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:3001/cart/${cartItemId}`, {
+      await axios.delete(`${import.meta.env.VITE_API_URL}/cart/${cartItemId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -99,7 +99,7 @@ const CartList = ({ cartProducts }) => {
   const placeOrder = async () => {
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:3001/orders', {}, {
+      await axios.post(`${import.meta.env.VITE_API_URL}/orders`, {}, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

@@ -88,7 +88,7 @@ const ProductListing = ({ products, title }) => {
   const handleConfirmDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:3001/products/${productToDelete.productId}`
+        `${import.meta.env.VITE_API_URL}/products/${productToDelete.productId}`
       );
       openModal({
         color: "#28a745",
@@ -168,11 +168,11 @@ const ProductListing = ({ products, title }) => {
       let response;
       if (editingProduct) {
         response = await axios.put(
-          `http://localhost:3001/products/${editingProduct.productId}`,
+          `${import.meta.env.VITE_API_URL}/products/${editingProduct.productId}`,
           formData
         );
       } else {
-        response = await axios.post("http://localhost:3001/products", formData);
+        response = await axios.post(`${import.meta.env.VITE_API_URL}/products`, formData);
         window.location.reload();
       }
 

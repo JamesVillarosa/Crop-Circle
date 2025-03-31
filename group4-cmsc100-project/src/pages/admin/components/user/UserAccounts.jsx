@@ -11,7 +11,7 @@ function UserAccounts() {
   // Function to fetch products from the database
   const fetchUser = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/admin/users/show");
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/admin/users/show`);
       // Update the users state with the fetched data
       setUser(response.data);
     } catch (error) {

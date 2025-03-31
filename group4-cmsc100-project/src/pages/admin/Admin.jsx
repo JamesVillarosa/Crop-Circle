@@ -18,7 +18,7 @@ const Admin= () => {
           throw new Error('No token found');
         }
 
-        const response = await axios.get("http://localhost:3001/user", {
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/user`, {
           headers: { 'Authorization': `Bearer ${token}` },
         });
 
@@ -52,7 +52,7 @@ const Admin= () => {
         throw new Error('No token found');
       }
 
-      const response = await axios.patch("http://localhost:3001/user", updatedInfo, {
+      const response = await axios.patch(`${import.meta.env.VITE_API_URL}/user`, updatedInfo, {
         headers: { 'Authorization': `Bearer ${token}` },
       });
 

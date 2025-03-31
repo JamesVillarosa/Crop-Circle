@@ -10,7 +10,7 @@ function MartPage() {
   // Function to fetch products from the database
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/products");
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/products`);
       // Update the products state with the fetched data
       setProduct(response.data);
     } catch (error) {
