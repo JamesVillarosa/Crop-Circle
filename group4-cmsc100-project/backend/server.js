@@ -17,7 +17,7 @@ const SECRET_KEY = 'super-secret-key';
 const app = express();
 
 // connect to mongoDB
-const dbURI = 'mongodb+srv://jvvillarosa:2SIItT2zSMwamnhL@projectdb.2ib30.mongodb.net/';
+const dbURI = process.env.MONGODB_URI || 'mongodb+srv://jvvillarosa:2SIItT2zSMwamnhL@projectdb.2ib30.mongodb.net/';
 
 // Landing route for /
 app.get('/', (req, res) => {
@@ -575,4 +575,6 @@ function getDateOfISOWeek(week, year) {
 }
 
 
+export default app;
+// Vercel serverless entry
 export default app;
