@@ -576,5 +576,3 @@ function getDateOfISOWeek(week, year) {
 
 
 export default app;
-// Vercel serverless entry
-export default app;
